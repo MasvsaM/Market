@@ -14,6 +14,32 @@ def registro (request):
 
     return render(request, "core/registro.html")     
 
+def ofertas (request):
+
+    return render(request, "core/ofertas.html")   
+
+def celulares (request):
+
+    return render(request, "core/celulares_Apple.html")
+def celularesAndroid (request):
+
+    return render(request, "core/celulares_Android.html")
+def celularesHauwei (request):
+
+    return render(request, "core/celulares_Hauwei.html")
+
+def computacionper (request):
+
+    return render(request, "core/Computacion_Perifericos.html")
+def computacioncomponentes (request):
+
+    return render(request, "core/Computacion_Componentes.html")
+
+def computaciongaming (request):
+
+    return render(request, "core/Computacion_Gaming.html")
+
+
 
 
 

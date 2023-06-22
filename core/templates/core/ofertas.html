@@ -2,34 +2,15 @@
 
 {% block content %}
     <main>
+        {% load static %}
         <!-- -----CAROUSEL-------- -->
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{% static 'img/carousel1.png' %}" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel3.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        
         <!-- -----CARD------------ -->
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/descuentos.png" class="card-img-top" alt="...">
+                        <img src="{% static 'img/ofertaS/descuentos.png' %}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Ofertas</h5>
                             <p class="card-text">¡Revisa las mejores ofertas que tenemos para ofrecerte!</p>
@@ -39,21 +20,21 @@
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/celulares.png" class="card-img-top" alt="...">
+                        <img src="{% static 'img/celulares/celulares.png' %}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Celulares</h5>
                             <p class="card-text">¿Cansado de tu celular? revisa nuestros nuevos equipos.</p>
-                            <a href="#" class="btn btn-primary">Explorar</a>
+                            <a href="{% url 'celulares' %}" class="btn btn-primary">Explorar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/mejoresmonitores.png" class="card-img-top" alt="...">
+                        <img src="{% static 'img/computadores/componentes_3.png' %}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Computacion</h5>
                             <p class="card-text">Componentes ultimas generaciones al mejor precio.</p>
-                            <a href="#" class="btn btn-primary">Explorar</a>
+                            <a href="{% url 'computacionperifericos' %}" class="btn btn-primary">Explorar</a>
                         </div>
                     </div>
                 </div>
